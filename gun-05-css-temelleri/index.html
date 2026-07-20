@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stajyer Kayıt Formu Sayfası</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <main class="container">
+        
+    <h1>Stajyer Kayıt Formu</h1>
+
+    <form method="get">
+
+        <div>
+        <label for="ad">Ad:</label>
+        <input type="text" id="ad" name="ad" required>
+        </div>
+        
+        <div>
+        <label for="soyad">Soyad:</label>
+        <input type="text" id="soyad" name="soyad" required>
+        </div>
+
+        <div>
+        <label for="eposta">E-posta:</label>
+        <input type="email" id="eposta" name="eposta" required>
+        </div>
+
+        <div>
+        <label for="telefon">Telefon:</label>
+        <input type="tel" id="telefon" name="telefon">
+        </div>
+
+        <div>
+        <label for="dogumtarihi">Doğum Tarihi:</label>
+        <input type="date" id="dogumtarihi" name="dogumtarihi">
+        </div>
+
+        <div>
+        <label for="sinif">Sınıf:</label>
+        <select id="sinif" name="sinif">
+            <option value="" selected disabled>Sınıf seçiniz</option>
+            <option value="hazirlik">Hazırlık</option>
+            <option value="1">1.Sınıf</option>
+            <option value="2">2.Sınıf</option>
+            <option value="3">3.Sınıf</option>
+            <option value="4">4.Sınıf</option>
+        </select>
+        </div>
+
+        <fieldset>
+            <legend>Bildiğiniz teknolojiler</legend>
+
+            <div>
+            <input
+                 type="checkbox"
+                 id="teknoloji-html"
+                 name="teknolojiler"
+                 value="HTML"
+            >
+            <label for="teknoloji-html">HTML</label>
+            </div>
+
+            <div>
+            <input
+                type="checkbox"
+                id="teknoloji-java"
+                name="teknolojiler"
+                value="Java"
+            >
+            <label for="teknoloji-java">Java</label>
+            </div>
+
+            <div>
+            <input
+                type="checkbox"
+                id="teknoloji-css"
+                name="teknolojiler"
+                value="CSS"
+            >
+            <label for="teknoloji-css">CSS</label>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Tercih ettiğiniz çalışma alanı</legend>
+
+            <div>
+                <input
+                    type="radio"
+                    id="alan-frontend"
+                    name="calisma-alani"
+                    value="Frontend"
+                >
+                <label for="alan-frontend">Frontend geliştirme</label>
+            </div>
+
+            <div>
+                <input
+                    type="radio"
+                    id="alan-backend"
+                    name="calisma-alani"
+                    value="Backend"
+                >
+                <label for="alan-backend">Backend geliştirme</label>
+            </div>
+
+            <div>
+                <input
+                    type="radio"
+                    id="alan-mobil-gelistirme"
+                    name="calisma-alani"
+                    value="Mobil geliştirme"
+                >
+                <label for="alan-mobil-gelistirme">Mobil geliştirme</label>
+            </div>
+        </fieldset>
+
+
+
+        <label for="aciklama">Kısa açıklama:</label>
+
+        <textarea
+             id="aciklama"
+             name="kisa-aciklama"
+             placeholder="Kendiniz hakkında kısa bir açıklama yazınız."
+             maxlength="200"
+        ></textarea>
+
+        <button type="submit">Stajyer kaydını oluştur</button>
+
+    </form>
+
+
+    <h2>Örnek Stajyer Listesi</h2>
+
+    <table>
+        <caption>Örnek Stajyer Bilgileri</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Ad Soyad</th>
+                <th scope="col">Sınıf</th>
+                <th scope="col">Bildiği Teknolojiler</th>
+                <th scope="col">Tercih Ettiği Alan</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ayşe Yılmaz</td>
+                <td>4. sınıf</td>
+                <td>HTML, CSS</td>
+                <td>Backend geliştirme</td>
+            </tr>
+
+            <tr>
+                <td>Zeynep İnci</td>
+                <td>2. sınıf</td>
+                <td>CSS</td>
+                <td>Frontend geliştirme</td>
+            </tr>
+
+            <tr>
+                <td>Ufuk Paydaş</td>
+                <td>Hazırlık</td>
+                <td>Java</td>
+                <td>Mobil geliştirme</td>
+            </tr>
+
+            <tr>
+                <td>Seda Gür</td>
+                <td>1. sınıf</td>
+                <td>HTML, Java</td>
+                <td>Mobil geliştirme</td>
+            </tr>
+
+            <tr>
+                <td>Kenan Yıldız</td>
+                <td>3. sınıf</td>
+                <td>Java</td>
+                <td>Frontend geliştirme</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+   </main>
+</body>
+
+</html>
