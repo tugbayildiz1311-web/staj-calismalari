@@ -1,0 +1,54 @@
+/*Header'da ana eksen yatay, çapraz eksen dikeydir.*/
+header{ 
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #a1b1c7;
+    color: #445771;
+}
+
+nav ul {
+    display:flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap:20px;
+}
+
+/*Kart alanında ana eksen yatay, çapraz eksen dikeydir.
+   Teknoloji kartları ana eksende yan yana sıralanır.*/
+.kart-alani { 
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/*Teknoloji kartında ana eksen dikey, çapraz eksen yataydır.
+   Başlık, açıklama ve buton ana eksende alt alta sıralanır.*/
+.teknoloji-karti { 
+    display:flex;
+    flex-direction:column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    padding: 10px;
+    border: 5px solid #445771;
+    border-radius: 5px;
+    color: #445771;
+    background-color: #a1b1c7;
+}
+
+.teknoloji-karti > p {
+    flex-grow: 1;
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #a1b1c7;
+    color: #445771;
+}
