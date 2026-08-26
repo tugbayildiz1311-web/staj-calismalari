@@ -56,3 +56,21 @@ Bu nedenle parola, kimlik bilgileri veya diğer hassas verilerin localStorage i�
 ## Sonuç
 
 Bu çalışmada ürün verilerini localStorage kullanarak kalıcı hale getirdim. Veri yükleme, kaydetme ve silme işlemlerini uyguladım ve JSON formatının localStorage ile kullanımını öğrendim.
+
+## Kurulum ve Çalıştırma
+
+Projeyi kullanmak için proje dosyaları bilgisayara indirilebilir veya Git ile repository klonlanabilir.
+
+Uygulama ek bir paket kurulumu gerektirmemektedir. `index.html` dosyası tarayıcıda açılarak çalıştırılabilir.
+
+## Kullanılan Git Akışı
+
+Çalışmalar sırasında aşağıdaki Git akışını kullandım:
+
+Değiştir → Kontrol et → Stage et → Commit et → Push et
+
+Kod üzerinde değişiklik yaptıktan sonra `git status` ve gerektiğinde `git diff` ile değişiklikleri kontrol ettim. Doğru değişiklikleri `git add` ile staging alanına ekledim ve anlamlı commit mesajlarıyla kaydettim. Tamamlanan commitleri daha sonra GitHub'a gönderdim.
+
+## Commitlerin Küçük Tutulmasının Önemi
+
+Commitlerin küçük ve tek bir konuya odaklı olması değişiklik geçmişinin daha kolay anlaşılmasını sağlar. Bir hata oluştuğunda hangi değişikliğin probleme neden olduğunu bulmayı kolaylaştırır. Ayrıca gerektiğinde belirli bir değişikliğin geri alınmasını ve ekip içinde yapılan çalışmaların incelenmesini kolaylaştırır.
