@@ -51,6 +51,7 @@ function renderProducts(productsToRender) {
         const emptyMessage = document.createElement("p");
         emptyMessage.textContent =
             "Gösterilecek ürün bulunamadı";
+            emptyMessage.classList.add("empty-message");
 
         productList.append(emptyMessage);
         return;

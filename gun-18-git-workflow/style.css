@@ -70,3 +70,11 @@ h1 {
     color: red;
     font-weight: bold;
 }
+
+.empty-message {
+    text-align: center;
+    padding: 30px;
+    border: 1px dashed #999;
+    border-radius: 8px;
+    font-size: 18px;
+}
