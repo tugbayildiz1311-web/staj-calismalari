@@ -74,3 +74,9 @@ Kod üzerinde değişiklik yaptıktan sonra `git status` ve gerektiğinde `git d
 ## Commitlerin Küçük Tutulmasının Önemi
 
 Commitlerin küçük ve tek bir konuya odaklı olması değişiklik geçmişinin daha kolay anlaşılmasını sağlar. Bir hata oluştuğunda hangi değişikliğin probleme neden olduğunu bulmayı kolaylaştırır. Ayrıca gerektiğinde belirli bir değişikliğin geri alınmasını ve ekip içinde yapılan çalışmaların incelenmesini kolaylaştırır.
+
+## Branch ve Main Arasındaki Fark
+
+`main`, projenin kararlı ve birleştirilmiş ana kodunu temsil eder.
+
+Branch ise yeni bir özellik veya düzeltme üzerinde `main` kodunu doğrudan değiştirmeden çalışmayı sağlar. Bu çalışmada ürün arama özelliğini geliştirmek için `feature/product-search` branch'i kullandım.
