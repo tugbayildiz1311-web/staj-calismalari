@@ -38,8 +38,13 @@ const formMessage = document.getElementById("formMessage");
 const clearFormButton = document.getElementById("clearFormButton");
 const clearProductsButton = document.getElementById("clearProductsButton");
 
+const productSearch = document.getElementById("productSearch");
 
-function renderProducts(productsToRender) {
+
+function renderProducts(
+    productsToRender,
+    emptyMessageText = "Gösterilecek ürün bulunamadı"
+) {
     while (productList.firstChild) {
         productList.firstChild.remove();
     }
@@ -49,9 +54,9 @@ function renderProducts(productsToRender) {
 
     if (productsToRender.length === 0) {
         const emptyMessage = document.createElement("p");
-        emptyMessage.textContent =
-            "Gösterilecek ürün bulunamadı";
-            emptyMessage.classList.add("empty-message");
+
+        emptyMessage.textContent = emptyMessageText;
+        emptyMessage.classList.add("empty-message");
 
         productList.append(emptyMessage);
         return;
@@ -245,6 +250,25 @@ clearProductsButton.addEventListener("click", function () {
     showMessage(
         "Tüm ürünler temizlendi.",
         "success"
+    );
+});
+
+
+productSearch.addEventListener("input", function () {
+    const searchText = productSearch.value
+        .trim()
+        .toLowerCase();
+
+    const filteredProducts = products.filter(
+        (product) =>
+            product.name
+                .toLowerCase()
+                .includes(searchText)
+    );
+
+    renderProducts(
+        filteredProducts,
+        "Aramanıza uygun ürün bulunamadı"
     );
 });
 
