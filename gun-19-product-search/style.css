@@ -78,3 +78,18 @@ h1 {
     border-radius: 8px;
     font-size: 18px;
 }
+
+.search-area {
+    margin: 20px 0;
+}
+
+.search-area label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.search-area input {
+    width: 250px;
+    padding: 8px;
+}

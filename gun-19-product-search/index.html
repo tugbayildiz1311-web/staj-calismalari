@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ürün Yönetim Uygulaması</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,38 +12,55 @@
     <h1>Ürün Yönetim Uygulaması</h1>
 
     <form id="productForm">
-    <div>
-        <label for="productName">Ürün Adı</label>
-        <input type="text" id="productName">
-        <small id="nameCount">0 karakter</small>
+
+        <div>
+            <label for="productName">Ürün Adı</label>
+            <input type="text" id="productName">
+            <small id="nameCount">0 karakter</small>
+        </div>
+
+        <div>
+            <label for="productCategory">Kategori</label>
+            <input type="text" id="productCategory">
+        </div>
+
+        <div>
+            <label for="productPrice">Fiyat</label>
+            <input type="number" id="productPrice">
+        </div>
+
+        <div>
+            <label for="productStock">Stok</label>
+            <input type="number" id="productStock">
+        </div>
+
+        <button type="submit">
+            Kaydet
+        </button>
+
+        <button type="button" id="clearFormButton">
+            Formu Temizle
+        </button>
+
+    </form>
+
+    <p id="formMessage"></p>
+
+    <button type="button" id="clearProductsButton">
+        Tüm Ürünleri Temizle
+    </button>
+
+    <div class="search-area">
+        <label for="productSearch">
+            Ürün Ara
+        </label>
+
+        <input
+            type="text"
+            id="productSearch"
+            placeholder="Ürün adı yazın"
+        >
     </div>
-
-    <div>
-        <label for="productCategory">Kategori</label>
-        <input type="text" id="productCategory">
-    </div>
-
-    <div>
-        <label for="productPrice">Fiyat</label>
-        <input type="number" id="productPrice">
-    </div>
-
-    <div>
-        <label for="productStock">Stok</label>
-        <input type="number" id="productStock">
-    </div>
-
-    <button type="submit">Kaydet</button>
-
-    <button type="button" id="clearFormButton">Formu Temizle</button>
-    
-</form>
-
-<p id="formMessage"></p>
-
-<button type="button" id="clearProductsButton">
-    Tüm Ürünleri Temizle
-</button>
 
     <p id="productCount"></p>
 
@@ -50,5 +68,6 @@
 
     <script src="products.js"></script>
     <script src="app.js"></script>
+
 </body>
 </html>
