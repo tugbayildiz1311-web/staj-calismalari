@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#getUsersButton {
+    padding: 10px 16px;
+    margin-bottom: 20px;
+}
+
+#statusMessage {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#userList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.user-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.user-card h2 {
+    margin-top: 0;
+}
+
+.user-card p {
+    margin: 8px 0;
+}
